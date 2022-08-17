@@ -19,7 +19,7 @@ body{
 }
 
 section{
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .container{
@@ -147,12 +147,9 @@ h2{
   margin-bottom: 70px;
 }
 
-.sky-img, .fols-img, .mine, .yuinju, .md{
+.member-img{
   filter: drop-shadow(0px 4px 15px rgba(255, 64, 247, 0.69));
   border-radius: 30px;
-}
-
-.sky-img {
   width: 540px;
 }
 
@@ -162,24 +159,15 @@ h2{
   width: 423px;
 }
 
-.button {
-  background: linear-gradient(94.83deg, #FCD68C 0%, #C78CFD 100%);
-  box-shadow: 0px 4px 15px rgba(255, 64, 247, 0.69);
-  border-radius: 100px;
-  font-size: 18px;
-  color: #fff;
+.soc-media-members a{
   text-decoration: none;
-  padding: 22px 0;
-  font-weight: 700;
-  line-height: 1.19em;
-  display: block;
-  width: 216px;
-  text-align: center;
-  transition: all 0.5s ease;
 }
 
-.button:hover {
-  width: 316px;
+.soc-media-members{
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  gap: 25px;
 }
 
 .hero-text{
@@ -190,62 +178,11 @@ h2{
   text-align: left;
 }
 
-.action-wrap .hero-text{
-  width: 701px;
-  color: black;
-}
-
-.action-wrap .intro{
-  margin: 31px 0;
-  width: 701px;
-}
-
-.actions{
-  padding-bottom: 100px;
-}
-
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 82px;
-}
-
-.features-container{
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
-  margin: 0 auto;
-}
-
-.feature{
-  display: flex;
-  gap: 30px;
-}
-
-.fols-img{
-  width: 1110px;
-}
-
-.feature-text{
-  text-align: center;
-  margin: 52px 0 0 0;
-}
-
-.feature-scr{
-  color: #fff;
-  text-decoration: none;
-}
-
-.action-wrap{
-  background: #FFEAFE;
-  box-shadow: 0px 4px 15px rgba(255, 64, 247, 0.69);
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  padding: 42px 19px 42px 65px;
-  justify-content: center;
 }
 
 .end-info-number{
@@ -259,9 +196,6 @@ h2{
 }
 
 .end-info{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   padding: 0 0 100px 0;
 }
 
@@ -309,23 +243,8 @@ h2{
   .container {
     max-width: 960px;
   }
-  .action-wrap .hero-text{
-    width: auto;
-  }
   .hero-text{
     width: 345px;
-  }
-  .fols-img{
-    width: 960px;
-  }
-  .mine, .yuinju, .md{
-    width: 287px;
-  }
-  .features-container, .action-wrap .intro{
-    width: auto;
-  }
-  .feature{
-    gap: 50px;
   }
 }
 
@@ -340,45 +259,30 @@ h2{
   .logo img{
     max-width: 140px;
   }
-  .intro, .action-wrap .intro{
+  .soc-media-members{
+    justify-content: center;
+  }
+  .intro{
     margin: 24px auto;
     width: auto;
   }
-  .features-container{
-    width: 540px;
-  }
-  .fols-img{
-    width: 540px;
-  }
-  .mine, .yuinju, .md{
-    width: 161px;
-  }
-  .feature{
-    gap: 30px;
-  }
-  .feature-text{
-    text-align: center;
-    margin: 32px 0 0 0;
+  .actions .wrapper{
+    flex-direction: column-reverse;
   }
   .wrapper{
     flex-direction: column;
     text-align: center;
     gap: 51px;
   }
-  .action-wrap{
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 55px 144px 101px 144px;
-  }
   .hero-text h2{
     text-align: center;
     margin: 0;
   }
+  .end-info{
+    padding-top: 60px;
+  }
   .end-info-number, .end-info-text{
     text-align: center;
-  }
-  .button{
-    margin: 0 auto;
   }
 }
 
@@ -393,25 +297,8 @@ h2{
   .menu-btn{
     right: 18px;
   }
-  .intro, .action-wrap .intro{
+  .intro{
     width: auto;
-  }
-  .mine, .yuinju, .md{
-    size: 261px;
-  }
-  .feature{
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-  .feature-text{
-    margin: 22px 0 0 0;
-  }
-  .features-container{
-    width: auto;
-  }
-  .action-wrap{
-    gap: 50px;
   }
 }
 
@@ -426,29 +313,16 @@ h2{
   .menubox{
     width: 100%;
   }
-  .sky-img, .fols-img{
+  .member-img, .fols-img{
     display: block;
     width: 100%;
   }
-  .hero-text, .intro, .feature-text{
+  .hero-text, .intro{
     width: auto;
     font-size: 16px;
   }
-  .moon-img{
-    display: block;
-    width: 201px;
-  }
-  .action-wrap{
-    padding: 70px 20px;
-  }
-  .action-wrap .hero-text{
-    width: 100%;
-  }
-  .action-wrap .intro{
-    width: auto;
-  }
   section{
-    padding-top: 90px;
+    padding-top: 30px;
   }
   .footer{
     padding: 90px 0;
